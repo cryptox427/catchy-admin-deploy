@@ -4,4 +4,4 @@ WORKDIR /admin
 COPY package.json /admin
 RUN npm install
 COPY . /admin
-RUN npm run serve
+CMD ["npm", "serve"]
